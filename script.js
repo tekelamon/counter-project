@@ -17,7 +17,9 @@ function handleIncrement() {
 
 // sub 1
 function handleDecrement() {
-  counter--;
+  if( counter > 0) {  // only positive numbers
+    counter--;
+  }
   updateCounter();
 }
 
